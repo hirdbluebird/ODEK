@@ -501,6 +501,10 @@ body {
 .mainpage-block a {
   display: none;
 }
+/* line 11, ../sass/modules/_blocks.scss */
+.mainpage-block:hover a, .mainpage-block:hover p {
+  display: block;
+}
 
 /* line 4, ../sass/modules/_sections.scss */
 main img {

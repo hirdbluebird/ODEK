@@ -5,6 +5,10 @@
 	}
 	p,
 	a {
-	display: none;
+		display: none;
+	}
+	&:hover a,
+	&:hover p {
+		display: block;
 	}
 }
