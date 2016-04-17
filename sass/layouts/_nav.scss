@@ -3,10 +3,7 @@ nav.navbar.navbar-default {
 	color: #bfbfc0;
 	border: none;
 	background: none;
-
-	-webkit-box-shadow: inset 0px 70px 75px -6px rgba(12,14,17,1);
-	-moz-box-shadow: inset 0px 70px 75px -6px rgba(12,14,17,1);
-	box-shadow: inset 0px 70px 75px -6px rgba(12,14,17,1);
+	@extend .navbar-top-black-boxshadow;
 	.navbar-nav > li:not(:last-child) {
 		border-right: 1px solid #515253;
 	}
@@ -23,9 +20,7 @@ nav.navbar.navbar-default {
 		}
 	}
 	& > .container .navbar-brand {
-		-webkit-box-shadow: inset 0px 170px 175px -6px rgba(12,14,17,1);
-		-moz-box-shadow: inset 0px 170px 175px -6px rgba(12,14,17,1);
-		box-shadow: inset 0px 170px 170px -6px rgba(12,14,17,1);
+		@extend .top-black-boxshadow;
 		position: relative;
 		top: 0px;
 		height: 190px;

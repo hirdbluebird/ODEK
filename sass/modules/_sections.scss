@@ -1,4 +1,6 @@
 main {
+	@extend .bottom-black-boxshadow;
+	@extend .gradient-border-line;
 	img {
 		width: 100%;
 	}

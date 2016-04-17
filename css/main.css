@@ -1,6 +1,39 @@
 /* 
 	BASE - Base styles, variables, mixins, etc 
 */
+/* line 8, ../sass/base/_mixins.scss */
+.top-black-boxshadow, nav.navbar.navbar-default > .container .navbar-brand {
+  -webkit-box-shadow: inset 0px 170px 195px -6px #0c0e11;
+  -moz-box-shadow: inset 0px 170px 195px -6px #0c0e11;
+  box-shadow: inset 0px 170px 190px -6px #0c0e11;
+}
+
+/* line 13, ../sass/base/_mixins.scss */
+.navbar-top-black-boxshadow, nav.navbar.navbar-default {
+  -webkit-box-shadow: inset 0px 70px 95px -6px #0c0e11;
+  -moz-box-shadow: inset 0px 70px 95px -6px #0c0e11;
+  box-shadow: inset 0px 70px 90px -6px #0c0e11;
+}
+
+/* line 18, ../sass/base/_mixins.scss */
+.bottom-black-boxshadow, main {
+  -webkit-box-shadow: inset 0px -170px 195px -6px #0c0e11;
+  -moz-box-shadow: inset 0px -170px 195px -6px #0c0e11;
+  box-shadow: inset 0px -170px 190px -6px #0c0e11;
+}
+
+/* line 23, ../sass/base/_mixins.scss */
+.radial-top-background, footer {
+  background: -webkit-radial-gradient(circle at top, #212326, #0c0e11, #0c0e11, #0c0e11, #0c0e11, #0c0e11);
+  background: radial-gradient(circle at top, #212326, #0c0e11, #0c0e11, #0c0e11, #0c0e11, #0c0e11);
+}
+
+/* line 27, ../sass/base/_mixins.scss */
+.gradient-border-line, main {
+  -webkit-linear-gradient: left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0) 100%;
+  linear-gradient: left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0) 100%;
+}
+
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -455,12 +488,26 @@ body {
 /*
 	MODULES - Individual site components
 */
-/* line 2, ../sass/modules/_sections.scss */
+/* line 1, ../sass/modules/_blocks.scss */
+.mainpage-block {
+  border-radius: 4px;
+}
+/* line 3, ../sass/modules/_blocks.scss */
+.mainpage-block h2 {
+  color: #ababac;
+}
+/* line 7, ../sass/modules/_blocks.scss */
+.mainpage-block p,
+.mainpage-block a {
+  display: none;
+}
+
+/* line 4, ../sass/modules/_sections.scss */
 main img {
   width: 100%;
 }
 
-/* line 6, ../sass/modules/_sections.scss */
+/* line 8, ../sass/modules/_sections.scss */
 .main-content {
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -480,30 +527,24 @@ nav.navbar.navbar-default {
   color: #bfbfc0;
   border: none;
   background: none;
-  -webkit-box-shadow: inset 0px 70px 75px -6px #0c0e11;
-  -moz-box-shadow: inset 0px 70px 75px -6px #0c0e11;
-  box-shadow: inset 0px 70px 75px -6px #0c0e11;
 }
-/* line 10, ../sass/layouts/_nav.scss */
+/* line 7, ../sass/layouts/_nav.scss */
 nav.navbar.navbar-default .navbar-nav > li:not(:last-child) {
   border-right: 1px solid #515253;
 }
-/* line 13, ../sass/layouts/_nav.scss */
+/* line 10, ../sass/layouts/_nav.scss */
 nav.navbar.navbar-default .navbar-nav {
   margin-top: 30px;
 }
-/* line 18, ../sass/layouts/_nav.scss */
+/* line 15, ../sass/layouts/_nav.scss */
 nav.navbar.navbar-default .navbar-nav > li > a, nav.navbar.navbar-default .navbar-nav > li > a.dropdown-toggle {
   color: #c0c1c1;
   line-height: 30px;
   padding-top: 0px;
   padding-bottom: 0px;
 }
-/* line 25, ../sass/layouts/_nav.scss */
+/* line 22, ../sass/layouts/_nav.scss */
 nav.navbar.navbar-default > .container .navbar-brand {
-  -webkit-box-shadow: inset 0px 170px 175px -6px #0c0e11;
-  -moz-box-shadow: inset 0px 170px 175px -6px #0c0e11;
-  box-shadow: inset 0px 170px 170px -6px #0c0e11;
   position: relative;
   top: 0px;
   height: 190px;
@@ -511,17 +552,9 @@ nav.navbar.navbar-default > .container .navbar-brand {
   border-right: 1px solid #15171a;
 }
 
-/* line 1, ../sass/layouts/_header.scss */
-.main-content {
-  -webkit-box-shadow: inset 0px 70px 75px -6px #0c0e11;
-  -moz-box-shadow: inset 0px 70px 75px -6px #0c0e11;
-  box-shadow: inset 0px 70px 75px -6px #0c0e11;
-}
-
 /* line 1, ../sass/layouts/_footer.scss */
 footer {
   text-align: center;
-  background-color: #0c0e11;
   color: #a6a6a7;
   padding-top: 35px;
   height: 127px;

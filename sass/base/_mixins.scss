@@ -5,3 +5,26 @@
 	background: -moz-linear-gradient($top, $bottom); /* For Firefox 3.6 to 15 */
 	background: linear-gradient($top, $bottom); /* Standard syntax */
 }
+.top-black-boxshadow {
+	-webkit-box-shadow: inset 0px 170px 195px -6px rgba(12,14,17,1);
+	-moz-box-shadow: inset 0px 170px 195px -6px rgba(12,14,17,1);
+	box-shadow: inset 0px 170px 190px -6px rgba(12,14,17,1);
+}
+.navbar-top-black-boxshadow {
+	-webkit-box-shadow: inset 0px 70px 95px -6px rgba(12,14,17,1);
+	-moz-box-shadow: inset 0px 70px 95px -6px rgba(12,14,17,1);
+	box-shadow: inset 0px 70px 90px -6px rgba(12,14,17,1);
+}
+.bottom-black-boxshadow {
+	-webkit-box-shadow: inset 0px -170px 195px -6px rgba(12,14,17,1);
+	-moz-box-shadow: inset 0px -170px 195px -6px rgba(12,14,17,1);
+	box-shadow: inset 0px -170px 190px -6px rgba(12,14,17,1);
+}
+.radial-top-background {
+	background: -webkit-radial-gradient(circle at top, #212326, #0c0e11, #0c0e11, #0c0e11, #0c0e11, #0c0e11);
+	background: radial-gradient(circle at top, #212326, #0c0e11, #0c0e11, #0c0e11, #0c0e11, #0c0e11);
+}
+.gradient-border-line {
+	-webkit-linear-gradient: (left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0) 100%);
+	linear-gradient: (left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0) 100%);
+}
