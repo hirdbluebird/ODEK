@@ -521,4 +521,12 @@ nav.navbar.navbar-default > .container .navbar-brand {
 /* line 1, ../sass/layouts/_footer.scss */
 footer {
   text-align: center;
+  background-color: #0c0e11;
+  color: #a6a6a7;
+  padding-top: 35px;
+  height: 127px;
+}
+/* line 7, ../sass/layouts/_footer.scss */
+footer p:last-child {
+  color: #393a3b;
 }
