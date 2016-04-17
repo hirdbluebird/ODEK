@@ -2,10 +2,11 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 main {
-	margin-top: 200px;
+
 }
 .main-content {
 	background-repeat: no-repeat;
-	background-size: auto 100%;
+	background-size: 100% auto;
 	background-position: center;
+	height: calc(100vh - 127px);
 }
