@@ -1,0 +1,14 @@
+main {
+	img {
+		width: 100%;
+	}
+}
+.main-content {
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center;
+	height: calc(100vh - 127px);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
