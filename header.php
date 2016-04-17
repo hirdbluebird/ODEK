@@ -22,7 +22,7 @@
     <![endif]-->
   </head>
   <body>
-    <div class="main-content"  style="background-image: url()">
+    <div class="main-content"  style="background-image: url(<?php the_field('mainpage-background-image'); ?>)">
       <header>
         <nav class="navbar navbar-default">
           <div class="container">
@@ -34,7 +34,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#"><img src="<?php get_template_directory_uri(); ?>img/logo.png" alt=""></a>
+              <a class="navbar-brand" href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt=""></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
