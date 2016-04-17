@@ -506,3 +506,8 @@ nav.navbar.navbar-default > .container .navbar-brand {
   -moz-box-shadow: inset 0px 70px 75px -6px #0c0e11;
   box-shadow: inset 0px 70px 75px -6px #0c0e11;
 }
+
+/* line 1, ../sass/layouts/_footer.scss */
+footer {
+  text-align: center;
+}
