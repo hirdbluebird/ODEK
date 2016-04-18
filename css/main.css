@@ -517,15 +517,18 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+@media screen and (max-width: 1200px) {
+  /* line 5, ../sass/base/_base.scss */
+  div.main-content {
+    background-size: auto 100%;
+  }
+}
 /*
 	MODULES - Individual site components
 */
-/* line 1, ../sass/modules/_blocks.scss */
-.mainpage-block-area {
-  position: relative;
-}
-/* line 3, ../sass/modules/_blocks.scss */
+/* line 2, ../sass/modules/_blocks.scss */
 .mainpage-block-area .mainpage-block {
+  position: relative;
   width: 95%;
   position: absolute;
   border-radius: 4px;
@@ -544,7 +547,7 @@ body {
 /* line 17, ../sass/modules/_blocks.scss */
 .mainpage-block-area .mainpage-block .text-container {
   padding: 5px 10px;
-  background: rgba(12, 14, 17, 0.7);
+  background: #0c0e11;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   color: #ababac;
@@ -577,19 +580,27 @@ body {
 
 /* line 1, ../sass/modules/_sections.scss */
 main {
-  min-height: 250px;
+  min-height: 200px;
 }
 /* line 5, ../sass/modules/_sections.scss */
+main .mainpage-block-area:first-child {
+  padding-left: 0px;
+}
+/* line 8, ../sass/modules/_sections.scss */
+main .mainpage-block-area:last-child {
+  padding-right: 0px;
+}
+/* line 11, ../sass/modules/_sections.scss */
 main img {
   width: 100%;
 }
 
-/* line 9, ../sass/modules/_sections.scss */
+/* line 15, ../sass/modules/_sections.scss */
 .main-content {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
-  height: calc(100vh - 127px);
+  height: 955px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -611,20 +622,29 @@ nav.navbar.navbar-default .navbar-nav > li:not(:last-child) {
 }
 /* line 10, ../sass/layouts/_nav.scss */
 nav.navbar.navbar-default .navbar-nav {
-  margin-top: 30px;
+  margin-top: 27px;
 }
 /* line 15, ../sass/layouts/_nav.scss */
 nav.navbar.navbar-default .navbar-nav > li > a, nav.navbar.navbar-default .navbar-nav > li > a.dropdown-toggle {
+  font-size: 1.1em;
   color: #c0c1c1;
   line-height: 30px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding: 0px 9px;
 }
 /* line 22, ../sass/layouts/_nav.scss */
 nav.navbar.navbar-default > .container .navbar-brand {
   position: relative;
   top: 0px;
-  height: 190px;
+  width: 220px;
+  height: 220px;
+  margin-left: 0px;
+  margin-right: 10px;
+  text-align: center;
+}
+/* line 32, ../sass/layouts/_nav.scss */
+nav.navbar.navbar-default > .container .navbar-brand img {
+  display: block;
+  margin: auto;
 }
 
 /* line 1, ../sass/layouts/_footer.scss */
@@ -640,58 +660,23 @@ footer p:last-child {
 }
 /* line 11, ../sass/layouts/_footer.scss */
 footer .footer-info {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-content: stretch;
-  -ms-flex-line-pack: stretch;
-  align-content: stretch;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  display: table !important;
+  width: 100%;
+  table-layout: fixed;
 }
-/* line 32, ../sass/layouts/_footer.scss */
-footer:nth-child(1) {
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  -webkit-align-self: auto;
-  -ms-flex-item-align: auto;
-  align-self: auto;
+/* line 17, ../sass/layouts/_footer.scss */
+footer .footer-info span:first-child, footer .footer-info span:nth-child(2), footer .footer-info span:last-child {
+  display: table-cell;
 }
-/* line 44, ../sass/layouts/_footer.scss */
-footer:flex-item:nth-child(2) {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -webkit-align-self: auto;
-  -ms-flex-item-align: auto;
-  align-self: auto;
+/* line 20, ../sass/layouts/_footer.scss */
+footer .footer-info span:first-child {
+  text-align: right;
 }
-/* line 56, ../sass/layouts/_footer.scss */
-footer:flex-item:nth-child(3) {
-  -webkit-order: 3;
-  -ms-flex-order: 3;
-  order: 3;
-  -webkit-flex: 2 1 auto;
-  -ms-flex: 2 1 auto;
-  flex: 2 1 auto;
-  -webkit-align-self: auto;
-  -ms-flex-item-align: auto;
-  align-self: auto;
+/* line 23, ../sass/layouts/_footer.scss */
+footer .footer-info span:nth-child(2) {
+  width: 105px;
+}
+/* line 26, ../sass/layouts/_footer.scss */
+footer .footer-info span:last-child {
+  text-align: left;
 }

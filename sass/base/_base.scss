@@ -1,3 +1,8 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 }
+@media screen and (max-width: 1200px) {
+	div.main-content {
+		background-size: auto 100%;
+	}
+}

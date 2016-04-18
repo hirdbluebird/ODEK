@@ -1,7 +1,13 @@
 main {
 	@extend .bottom-black-boxshadow;
 	@extend .gradient-border-line;
-	min-height: 250px;
+	min-height: 200px;
+	.mainpage-block-area:first-child {
+		padding-left: 0px;
+	}
+	.mainpage-block-area:last-child {
+		padding-right: 0px;
+	}
 	img {
 		width: 100%;
 	}
@@ -10,7 +16,7 @@ main {
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position: center;
-	height: calc(100vh - 127px);
+	height: 955px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;

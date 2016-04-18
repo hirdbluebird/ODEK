@@ -8,15 +8,15 @@ nav.navbar.navbar-default {
 		border-right: 1px solid #515253;
 	}
 	.navbar-nav {
-		margin-top: 30px;
+		margin-top: 27px;
 	}
 	.navbar-nav > li {
 		& > a,
 		& > a.dropdown-toggle {
+			font-size: 1.1em;
 			color: #c0c1c1;
 			line-height: 30px;
-			padding-top: 0px;
-			padding-bottom: 0px;
+			padding: 0px 9px;
 		}
 	}
 	& > .container .navbar-brand {
@@ -24,6 +24,14 @@ nav.navbar.navbar-default {
 		@extend .logo-border;
 		position: relative;
 		top: 0px;
-		height: 190px;
+		width: 220px;
+		height: 220px;
+		margin-left: 0px;
+		margin-right: 10px;
+		text-align: center;
+		img {
+			display: block;
+			margin: auto;
+		}
 	}
 }  

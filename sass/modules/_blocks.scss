@@ -1,7 +1,7 @@
 .mainpage-block-area {
-	position: relative;
 	.mainpage-block {
 		@extend .default-box-shadow;
+		position: relative;
 		width: 95%;
 		position: absolute;
 		border-radius: 4px;
@@ -16,7 +16,7 @@
 		}
 		.text-container {
 			padding: 5px 10px;
-			background: rgba(12,14,17,0.7);
+			background: rgba(12,14,17,1);
 			border-bottom-left-radius: 5px;
 			border-bottom-right-radius: 5px;
 			color: #ababac;
