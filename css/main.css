@@ -540,13 +540,15 @@ body {
 }
 /* line 31, ../sass/modules/_blocks.scss */
 .mainpage-block-area .mainpage-block .text-container a {
-  float: right;
+  margin-bottom: 5px;
+  color: #1084af;
+  text-align: right;
 }
-/* line 36, ../sass/modules/_blocks.scss */
+/* line 38, ../sass/modules/_blocks.scss */
 .mainpage-block-area .mainpage-block:hover a, .mainpage-block-area .mainpage-block:hover p {
   display: block;
 }
-/* line 39, ../sass/modules/_blocks.scss */
+/* line 41, ../sass/modules/_blocks.scss */
 .mainpage-block-area .mainpage-block:hover h3 {
   color: white;
 }
