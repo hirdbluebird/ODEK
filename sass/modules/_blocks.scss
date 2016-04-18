@@ -1,6 +1,7 @@
 .mainpage-block-area {
 	position: relative;
 	.mainpage-block {
+		@extend .default-box-shadow;
 		width: 95%;
 		position: absolute;
 		border-radius: 4px;

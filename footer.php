@@ -1,6 +1,10 @@
     <footer>
       <div class="container">
-        <p>ОДЕК: дух поколінь, втілений у продукції! <img src="<?php echo get_template_directory_uri();?>/img/footer-planet.png" alt=""> Geography of sales</p>
+        <p class="footer-info">
+          <span>ОДЕК: дух поколінь, втілений у продукції!</span>
+          <img src="<?php echo get_template_directory_uri();?>/img/footer-planet.png" alt="">
+          <span> Geography of sales</span>
+        </p>
         <p>Copyrighed 2016 Odek.eu</p> 
       </div>
     </footer>

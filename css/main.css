@@ -14,13 +14,20 @@
 }
 
 /* line 14, ../sass/base/_mixins.scss */
+.default-box-shadow, .mainpage-block-area .mainpage-block {
+  webkit-box-shadow: 0px 0px 20px 0px #0c0e11;
+  -moz-box-shadow: 0px 0px 20px 0px #0c0e11;
+  box-shadow: 0px 0px 20px 0px #0c0e11;
+}
+
+/* line 19, ../sass/base/_mixins.scss */
 .navbar-top-black-boxshadow, nav.navbar.navbar-default {
   -webkit-box-shadow: inset 0px 70px 95px -6px #0c0e11;
   -moz-box-shadow: inset 0px 70px 95px -6px #0c0e11;
   box-shadow: inset 0px 70px 90px -6px #0c0e11;
 }
 
-/* line 19, ../sass/base/_mixins.scss */
+/* line 24, ../sass/base/_mixins.scss */
 .bottom-black-boxshadow, main {
   background: -webkit-linear-gradient(rgba(12, 14, 17, 0) 0%, rgba(12, 14, 17, 0.7) 70%, #0c0e11 100%);
   /* For Safari 5.1 to 6.0 */
@@ -32,19 +39,19 @@
   /* Standard syntax (must be last) */
 }
 
-/* line 25, ../sass/base/_mixins.scss */
+/* line 30, ../sass/base/_mixins.scss */
 .radial-top-background, footer {
-  background: -webkit-radial-gradient(circle at top, #212326, #0c0e11);
-  background: radial-gradient(circle at top, #212326, #0c0e11);
+  background: -webkit-radial-gradient(ellipse at top, #212326 20px, #0c0e11 95%);
+  background: radial-gradient(ellipse at top, #212326 10px, #0c0e11 30%);
 }
 
-/* line 29, ../sass/base/_mixins.scss */
+/* line 34, ../sass/base/_mixins.scss */
 .gradient-border-line, main {
   -webkit-linear-gradient: left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0) 100%;
   linear-gradient: left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0) 100%;
 }
 
-/* line 33, ../sass/base/_mixins.scss */
+/* line 38, ../sass/base/_mixins.scss */
 .logo-border, nav.navbar.navbar-default > .container .navbar-brand {
   border: 1px solid transparent;
   -moz-border-image: -moz-linear-gradient(top, black 0%, rgba(12, 14, 17, 0) 100%);
@@ -53,7 +60,7 @@
   border-bottom: 0px solid transparent;
 }
 
-/* line 40, ../sass/base/_mixins.scss */
+/* line 45, ../sass/base/_mixins.scss */
 .footer-top-border, footer {
   -webkit-border-image: -webkit-linear-gradient(left, #0c0e11 1%, #343639 50%, #0c0e11 100%) 100% 0 0 0/2px 0 0 0 stretch;
   border-bottom-width: 0px;
@@ -523,18 +530,18 @@ body {
   position: absolute;
   border-radius: 4px;
 }
-/* line 7, ../sass/modules/_blocks.scss */
+/* line 8, ../sass/modules/_blocks.scss */
 .mainpage-block-area .mainpage-block .image-container {
   max-height: 100px;
   overflow: hidden;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-/* line 12, ../sass/modules/_blocks.scss */
+/* line 13, ../sass/modules/_blocks.scss */
 .mainpage-block-area .mainpage-block .image-container img {
   width: 100%;
 }
-/* line 16, ../sass/modules/_blocks.scss */
+/* line 17, ../sass/modules/_blocks.scss */
 .mainpage-block-area .mainpage-block .text-container {
   padding: 5px 10px;
   background: rgba(12, 14, 17, 0.7);
@@ -542,28 +549,28 @@ body {
   border-bottom-right-radius: 5px;
   color: #ababac;
 }
-/* line 22, ../sass/modules/_blocks.scss */
+/* line 23, ../sass/modules/_blocks.scss */
 .mainpage-block-area .mainpage-block .text-container h3 {
   margin: 0px 0px 5px 0px;
 }
-/* line 26, ../sass/modules/_blocks.scss */
+/* line 27, ../sass/modules/_blocks.scss */
 .mainpage-block-area .mainpage-block .text-container p,
 .mainpage-block-area .mainpage-block .text-container a {
   display: none;
   max-height: 80px;
   overflow: hidden;
 }
-/* line 31, ../sass/modules/_blocks.scss */
+/* line 32, ../sass/modules/_blocks.scss */
 .mainpage-block-area .mainpage-block .text-container a {
   margin-bottom: 5px;
   color: #1084af;
   text-align: right;
 }
-/* line 38, ../sass/modules/_blocks.scss */
+/* line 39, ../sass/modules/_blocks.scss */
 .mainpage-block-area .mainpage-block:hover a, .mainpage-block-area .mainpage-block:hover p {
   display: block;
 }
-/* line 41, ../sass/modules/_blocks.scss */
+/* line 42, ../sass/modules/_blocks.scss */
 .mainpage-block-area .mainpage-block:hover h3 {
   color: white;
 }
@@ -630,4 +637,61 @@ footer {
 /* line 8, ../sass/layouts/_footer.scss */
 footer p:last-child {
   color: #393a3b;
+}
+/* line 11, ../sass/layouts/_footer.scss */
+footer .footer-info {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+/* line 32, ../sass/layouts/_footer.scss */
+footer:nth-child(1) {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+/* line 44, ../sass/layouts/_footer.scss */
+footer:flex-item:nth-child(2) {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+/* line 56, ../sass/layouts/_footer.scss */
+footer:flex-item:nth-child(3) {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+  -webkit-flex: 2 1 auto;
+  -ms-flex: 2 1 auto;
+  flex: 2 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
 }
