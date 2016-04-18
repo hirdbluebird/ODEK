@@ -1,14 +1,43 @@
-.mainpage-block {
-	border-radius: 4px;
-	h2 {
-		color: #ababac;
-	}
-	p,
-	a {
-		display: none;
-	}
-	&:hover a,
-	&:hover p {
-		display: block;
+.mainpage-block-area {
+	position: relative;
+	.mainpage-block {
+		width: 95%;
+		position: absolute;
+		border-radius: 4px;
+		.image-container {
+			max-height: 100px;
+			overflow: hidden;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px; 
+			img {
+				width: 100%
+			}
+		}
+		.text-container {
+			padding: 5px 10px;
+			background: rgba(12,14,17,0.7);
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+			color: #ababac;
+			h3 {
+				margin: 0px 0px 5px 0px;
+			}
+			p,
+			a {
+				display: none;
+				max-height: 80px;
+				overflow: hidden;
+			}
+			a {
+				float: right;
+			}
+		}
+		&:hover a,
+		&:hover p {
+			display: block;
+		}
+		&:hover h3 {
+			color: white;
+		}
 	}
 }

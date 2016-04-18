@@ -1,6 +1,7 @@
 main {
 	@extend .bottom-black-boxshadow;
 	@extend .gradient-border-line;
+	min-height: 250px;
 	img {
 		width: 100%;
 	}

@@ -22,18 +22,23 @@
 
 /* line 19, ../sass/base/_mixins.scss */
 .bottom-black-boxshadow, main {
-  -webkit-box-shadow: inset 0px -170px 195px -6px #0c0e11;
-  -moz-box-shadow: inset 0px -170px 195px -6px #0c0e11;
-  box-shadow: inset 0px -170px 190px -6px #0c0e11;
+  background: -webkit-linear-gradient(rgba(12, 14, 17, 0) 0%, rgba(12, 14, 17, 0.7) 70%, #0c0e11 100%);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(12, 14, 17, 0) 0%, rgba(12, 14, 17, 0.7) 70%, #0c0e11 100%);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(12, 14, 17, 0) 0%, rgba(12, 14, 17, 0.7) 70%, #0c0e11 100%);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(12, 14, 17, 0) 0%, rgba(12, 14, 17, 0.7) 70%, #0c0e11 100%);
+  /* Standard syntax (must be last) */
 }
 
-/* line 24, ../sass/base/_mixins.scss */
+/* line 25, ../sass/base/_mixins.scss */
 .radial-top-background, footer {
   background: -webkit-radial-gradient(circle at top, #212326, #0c0e11, #0c0e11, #0c0e11, #0c0e11, #0c0e11);
   background: radial-gradient(circle at top, #212326, #0c0e11, #0c0e11, #0c0e11, #0c0e11, #0c0e11);
 }
 
-/* line 28, ../sass/base/_mixins.scss */
+/* line 29, ../sass/base/_mixins.scss */
 .gradient-border-line, main {
   -webkit-linear-gradient: left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0) 100%;
   linear-gradient: left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0) 100%;
@@ -494,29 +499,68 @@ body {
 	MODULES - Individual site components
 */
 /* line 1, ../sass/modules/_blocks.scss */
-.mainpage-block {
-  border-radius: 4px;
+.mainpage-block-area {
+  position: relative;
 }
 /* line 3, ../sass/modules/_blocks.scss */
-.mainpage-block h2 {
-  color: #ababac;
+.mainpage-block-area .mainpage-block {
+  width: 95%;
+  position: absolute;
+  border-radius: 4px;
 }
 /* line 7, ../sass/modules/_blocks.scss */
-.mainpage-block p,
-.mainpage-block a {
-  display: none;
+.mainpage-block-area .mainpage-block .image-container {
+  max-height: 100px;
+  overflow: hidden;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
-/* line 11, ../sass/modules/_blocks.scss */
-.mainpage-block:hover a, .mainpage-block:hover p {
+/* line 12, ../sass/modules/_blocks.scss */
+.mainpage-block-area .mainpage-block .image-container img {
+  width: 100%;
+}
+/* line 16, ../sass/modules/_blocks.scss */
+.mainpage-block-area .mainpage-block .text-container {
+  padding: 5px 10px;
+  background: rgba(12, 14, 17, 0.7);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #ababac;
+}
+/* line 22, ../sass/modules/_blocks.scss */
+.mainpage-block-area .mainpage-block .text-container h3 {
+  margin: 0px 0px 5px 0px;
+}
+/* line 26, ../sass/modules/_blocks.scss */
+.mainpage-block-area .mainpage-block .text-container p,
+.mainpage-block-area .mainpage-block .text-container a {
+  display: none;
+  max-height: 80px;
+  overflow: hidden;
+}
+/* line 31, ../sass/modules/_blocks.scss */
+.mainpage-block-area .mainpage-block .text-container a {
+  float: right;
+}
+/* line 36, ../sass/modules/_blocks.scss */
+.mainpage-block-area .mainpage-block:hover a, .mainpage-block-area .mainpage-block:hover p {
   display: block;
 }
+/* line 39, ../sass/modules/_blocks.scss */
+.mainpage-block-area .mainpage-block:hover h3 {
+  color: white;
+}
 
-/* line 4, ../sass/modules/_sections.scss */
+/* line 1, ../sass/modules/_sections.scss */
+main {
+  min-height: 250px;
+}
+/* line 5, ../sass/modules/_sections.scss */
 main img {
   width: 100%;
 }
 
-/* line 8, ../sass/modules/_sections.scss */
+/* line 9, ../sass/modules/_sections.scss */
 .main-content {
   background-repeat: no-repeat;
   background-size: 100% auto;
