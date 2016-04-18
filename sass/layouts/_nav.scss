@@ -21,10 +21,9 @@ nav.navbar.navbar-default {
 	}
 	& > .container .navbar-brand {
 		@extend .top-black-boxshadow;
+		@extend .logo-border;
 		position: relative;
 		top: 0px;
 		height: 190px;
-		border-left: 1px solid #15171a;
-		border-right: 1px solid #15171a;
 	}
 }  

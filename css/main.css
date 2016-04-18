@@ -34,14 +34,29 @@
 
 /* line 25, ../sass/base/_mixins.scss */
 .radial-top-background, footer {
-  background: -webkit-radial-gradient(circle at top, #212326, #0c0e11, #0c0e11, #0c0e11, #0c0e11, #0c0e11);
-  background: radial-gradient(circle at top, #212326, #0c0e11, #0c0e11, #0c0e11, #0c0e11, #0c0e11);
+  background: -webkit-radial-gradient(circle at top, #212326, #0c0e11);
+  background: radial-gradient(circle at top, #212326, #0c0e11);
 }
 
 /* line 29, ../sass/base/_mixins.scss */
 .gradient-border-line, main {
   -webkit-linear-gradient: left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0) 100%;
   linear-gradient: left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0) 100%;
+}
+
+/* line 33, ../sass/base/_mixins.scss */
+.logo-border, nav.navbar.navbar-default > .container .navbar-brand {
+  border: 1px solid transparent;
+  -moz-border-image: -moz-linear-gradient(top, black 0%, rgba(12, 14, 17, 0) 100%);
+  -webkit-border-image: -webkit-linear-gradient(top, black 0%, rgba(12, 14, 17, 0) 100%);
+  border-image: linear-gradient(to bottom, #000000 0%, rgba(12, 14, 17, 0) 100%);
+  border-bottom: 0px solid transparent;
+}
+
+/* line 40, ../sass/base/_mixins.scss */
+.footer-top-border, footer {
+  -webkit-border-image: -webkit-linear-gradient(left, #0c0e11 1%, #343639 50%, #0c0e11 100%) 100% 0 0 0/2px 0 0 0 stretch;
+  border-bottom-width: 0px;
 }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
@@ -603,8 +618,6 @@ nav.navbar.navbar-default > .container .navbar-brand {
   position: relative;
   top: 0px;
   height: 190px;
-  border-left: 1px solid #15171a;
-  border-right: 1px solid #15171a;
 }
 
 /* line 1, ../sass/layouts/_footer.scss */
@@ -614,7 +627,7 @@ footer {
   padding-top: 35px;
   height: 127px;
 }
-/* line 7, ../sass/layouts/_footer.scss */
+/* line 8, ../sass/layouts/_footer.scss */
 footer p:last-child {
   color: #393a3b;
 }
