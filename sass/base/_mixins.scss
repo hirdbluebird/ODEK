@@ -6,9 +6,10 @@
 	background: linear-gradient($top, $bottom); /* Standard syntax */
 }
 .top-black-boxshadow {
-	-webkit-box-shadow: inset 0px 170px 195px -6px rgba(12,14,17,1);
-	-moz-box-shadow: inset 0px 170px 195px -6px rgba(12,14,17,1);
-	box-shadow: inset 0px 170px 190px -6px rgba(12,14,17,1);
+	background: -webkit-linear-gradient( rgba(12,14,17,1) 0%, rgba(12,14,17,0.7) 70%, rgba(12,14,17,0) 100% ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(  rgba(12,14,17,1) 0%, rgba(12,14,17,0.7) 70%, rgba(12,14,17,0) 100% ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(  rgba(12,14,17,1) 0%, rgba(12,14,17,0.7) 70%, rgba(12,14,17,0) 100% ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(  rgba(12,14,17,1) 0%, rgba(12,14,17,0.7) 70%, rgba(12,14,17,0) 100% ); /* Standard syntax (must be last) */
 }
 .navbar-top-black-boxshadow {
 	-webkit-box-shadow: inset 0px 70px 95px -6px rgba(12,14,17,1);

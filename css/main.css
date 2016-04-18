@@ -3,32 +3,37 @@
 */
 /* line 8, ../sass/base/_mixins.scss */
 .top-black-boxshadow, nav.navbar.navbar-default > .container .navbar-brand {
-  -webkit-box-shadow: inset 0px 170px 195px -6px #0c0e11;
-  -moz-box-shadow: inset 0px 170px 195px -6px #0c0e11;
-  box-shadow: inset 0px 170px 190px -6px #0c0e11;
+  background: -webkit-linear-gradient(#0c0e11 0%, rgba(12, 14, 17, 0.7) 70%, rgba(12, 14, 17, 0) 100%);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#0c0e11 0%, rgba(12, 14, 17, 0.7) 70%, rgba(12, 14, 17, 0) 100%);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#0c0e11 0%, rgba(12, 14, 17, 0.7) 70%, rgba(12, 14, 17, 0) 100%);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#0c0e11 0%, rgba(12, 14, 17, 0.7) 70%, rgba(12, 14, 17, 0) 100%);
+  /* Standard syntax (must be last) */
 }
 
-/* line 13, ../sass/base/_mixins.scss */
+/* line 14, ../sass/base/_mixins.scss */
 .navbar-top-black-boxshadow, nav.navbar.navbar-default {
   -webkit-box-shadow: inset 0px 70px 95px -6px #0c0e11;
   -moz-box-shadow: inset 0px 70px 95px -6px #0c0e11;
   box-shadow: inset 0px 70px 90px -6px #0c0e11;
 }
 
-/* line 18, ../sass/base/_mixins.scss */
+/* line 19, ../sass/base/_mixins.scss */
 .bottom-black-boxshadow, main {
   -webkit-box-shadow: inset 0px -170px 195px -6px #0c0e11;
   -moz-box-shadow: inset 0px -170px 195px -6px #0c0e11;
   box-shadow: inset 0px -170px 190px -6px #0c0e11;
 }
 
-/* line 23, ../sass/base/_mixins.scss */
+/* line 24, ../sass/base/_mixins.scss */
 .radial-top-background, footer {
   background: -webkit-radial-gradient(circle at top, #212326, #0c0e11, #0c0e11, #0c0e11, #0c0e11, #0c0e11);
   background: radial-gradient(circle at top, #212326, #0c0e11, #0c0e11, #0c0e11, #0c0e11, #0c0e11);
 }
 
-/* line 27, ../sass/base/_mixins.scss */
+/* line 28, ../sass/base/_mixins.scss */
 .gradient-border-line, main {
   -webkit-linear-gradient: left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0) 100%;
   linear-gradient: left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0) 100%;
