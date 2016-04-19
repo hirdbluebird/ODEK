@@ -41,7 +41,7 @@ $(document).ready(function() {
 	}
 
 	function startSlide() {
-		setInterval(autoSlide, 1000);
+		setInterval(autoSlide, 5000);
 	}
 
 	startSlide();
