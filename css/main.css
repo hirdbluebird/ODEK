@@ -524,44 +524,50 @@ body {
   }
 
   /* line 14, ../sass/base/_base.scss */
+  .slider {
+    position: relative;
+    display: block;
+  }
+
+  /* line 18, ../sass/base/_base.scss */
   div.main-content {
     display: block;
     background-image: none !important;
   }
 
-  /* line 18, ../sass/base/_base.scss */
+  /* line 22, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block {
     position: relative;
     margin: 20px auto;
   }
-  /* line 22, ../sass/base/_base.scss */
+  /* line 26, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block:hover h3 {
     text-decoration: none;
   }
-  /* line 26, ../sass/base/_base.scss */
+  /* line 30, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block .image-container {
     min-height: 150px;
   }
-  /* line 29, ../sass/base/_base.scss */
+  /* line 33, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block h3 {
     text-decoration: underline;
   }
-  /* line 32, ../sass/base/_base.scss */
+  /* line 36, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block p {
     color: #7d7d7e;
   }
-  /* line 35, ../sass/base/_base.scss */
+  /* line 39, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block .text-container a {
     color: #adadae;
     text-decoration: underline;
   }
 
-  /* line 40, ../sass/base/_base.scss */
+  /* line 44, ../sass/base/_base.scss */
   .navbar-toggle {
     float: left;
   }
 
-  /* line 43, ../sass/base/_base.scss */
+  /* line 47, ../sass/base/_base.scss */
   nav.navbar.navbar-default > .container a.navbar-brand {
     float: none;
     display: block;
@@ -569,38 +575,42 @@ body {
     background: none;
   }
 
-  /* line 49, ../sass/base/_base.scss */
+  /* line 53, ../sass/base/_base.scss */
   .navbar-default .navbar-toggle {
     border: none;
   }
-  /* line 51, ../sass/base/_base.scss */
+  /* line 55, ../sass/base/_base.scss */
   .navbar-default .navbar-toggle:hover {
     background: none;
   }
-  /* line 54, ../sass/base/_base.scss */
+  /* line 58, ../sass/base/_base.scss */
   .navbar-default .navbar-toggle .icon-bar {
     background-color: white;
     width: 40px;
     height: 3px;
   }
 
-  /* line 60, ../sass/base/_base.scss */
+  /* line 64, ../sass/base/_base.scss */
   main div.mainpage-block-area:first-child {
     padding-left: 15px;
   }
 
-  /* line 63, ../sass/base/_base.scss */
+  /* line 67, ../sass/base/_base.scss */
   main div.mainpage-block-area:last-child {
     padding-right: 15px;
   }
 
-  /* line 68, ../sass/base/_base.scss */
+  /* line 70, ../sass/base/_base.scss */
+  footer {
+    background: none;
+  }
+  /* line 74, ../sass/base/_base.scss */
   footer div.footer-info span:first-child, footer div.footer-info span:last-child {
     display: none;
   }
 }
 @media screen and (min-width: 1201px) {
-  /* line 75, ../sass/base/_base.scss */
+  /* line 82, ../sass/base/_base.scss */
   nav.navbar.navbar-default .navbar-nav > li {
     font-size: 1.1em;
     padding: 0px 9px;

@@ -9,8 +9,9 @@ $(document).ready(function() {
 	var slideCount = $('.slider .images .slide').size(),
 		count = 0;
 
-	while(count > slideCount) {
-		$('ul.triggers').append('<li>' + (count + 1) + '</li>');
+	while(count < slideCount) {
+		$('ul.triggers').append('<li></li>');
+		count++;
 	}
 
 	function lightTrigger(index) {
@@ -31,11 +32,10 @@ $(document).ready(function() {
 	function autoSlide() {
 		var activeSlideIndex = $('.slider .images .active-slide').index();
 		if(activeSlideIndex === slideCount) {
-			$('.slider .images .active-slide').removeClass('active-slide').first().addClass('active-slide');
+			$('.slider .images .slide').removeClass('active-slide').first().addClass('active-slide');
 			lightTrigger(0);
 		} else {
 			$('.slider .images .active-slide').removeClass('active-slide').next().addClass('active-slide');
-			console.log(activeSlideIndex);
 			lightTrigger(activeSlideIndex + 1);
 		}
 	}
