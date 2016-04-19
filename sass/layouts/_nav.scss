@@ -3,7 +3,6 @@ nav.navbar.navbar-default {
 	color: #bfbfc0;
 	border: none;
 	background: none;
-	@extend .navbar-top-black-boxshadow;
 	.navbar-nav > li:not(:last-child) {
 		border-right: 1px solid #515253;
 	}
@@ -20,7 +19,7 @@ nav.navbar.navbar-default {
 		}
 	}
 	& > .container .navbar-brand {
-		@extend .top-black-boxshadow;
+		@extend .logo-black-gradient;
 		@extend .logo-border;
 		position: relative;
 		top: 0px;

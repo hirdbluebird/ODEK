@@ -2,7 +2,7 @@
 	BASE - Base styles, variables, mixins, etc 
 */
 /* line 8, ../sass/base/_mixins.scss */
-.top-black-boxshadow, nav.navbar.navbar-default > .container .navbar-brand {
+.logo-black-gradient, nav.navbar.navbar-default > .container .navbar-brand {
   background: -webkit-linear-gradient(#0c0e11 0%, rgba(12, 14, 17, 0.7) 70%, rgba(12, 14, 17, 0) 100%);
   /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(#0c0e11 0%, rgba(12, 14, 17, 0.7) 70%, rgba(12, 14, 17, 0) 100%);
@@ -21,37 +21,30 @@
 }
 
 /* line 19, ../sass/base/_mixins.scss */
-.navbar-top-black-boxshadow, nav.navbar.navbar-default {
-  -webkit-box-shadow: inset 0px 70px 95px -6px #0c0e11;
-  -moz-box-shadow: inset 0px 70px 95px -6px #0c0e11;
-  box-shadow: inset 0px 70px 90px -6px #0c0e11;
-}
-
-/* line 24, ../sass/base/_mixins.scss */
-.bottom-black-boxshadow, main {
-  background: -webkit-linear-gradient(rgba(12, 14, 17, 0) 0%, rgba(12, 14, 17, 0.7) 70%, #0c0e11 100%);
+.header-gradient-background, header {
+  background: -webkit-linear-gradient(#0c0e11 4%, rgba(12, 14, 17, 0.9) 15%, rgba(12, 14, 17, 0.7) 25%, rgba(12, 14, 17, 0) 50%);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(rgba(12, 14, 17, 0) 0%, rgba(12, 14, 17, 0.7) 70%, #0c0e11 100%);
+  background: -o-linear-gradient(#0c0e11 4%, rgba(12, 14, 17, 0.9) 15%, rgba(12, 14, 17, 0.7) 25%, rgba(12, 14, 17, 0) 50%);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(rgba(12, 14, 17, 0) 0%, rgba(12, 14, 17, 0.7) 70%, #0c0e11 100%);
+  background: -moz-linear-gradient(#0c0e11 4%, rgba(12, 14, 17, 0.9) 15%, rgba(12, 14, 17, 0.7) 25%, rgba(12, 14, 17, 0) 50%);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(rgba(12, 14, 17, 0) 0%, rgba(12, 14, 17, 0.7) 70%, #0c0e11 100%);
+  background: linear-gradient(#0c0e11 4%, rgba(12, 14, 17, 0.9) 15%, rgba(12, 14, 17, 0.7) 25%, rgba(12, 14, 17, 0) 50%);
   /* Standard syntax (must be last) */
 }
 
-/* line 30, ../sass/base/_mixins.scss */
+/* line 25, ../sass/base/_mixins.scss */
 .radial-top-background, footer {
   background: -webkit-radial-gradient(ellipse at top, #212326 20px, #0c0e11 95%);
   background: radial-gradient(ellipse at top, #212326 10px, #0c0e11 30%);
 }
 
-/* line 34, ../sass/base/_mixins.scss */
+/* line 29, ../sass/base/_mixins.scss */
 .gradient-border-line, main {
   -webkit-linear-gradient: left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0) 100%;
   linear-gradient: left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0) 100%;
 }
 
-/* line 38, ../sass/base/_mixins.scss */
+/* line 33, ../sass/base/_mixins.scss */
 .logo-border, nav.navbar.navbar-default > .container .navbar-brand {
   border: 1px solid transparent;
   -moz-border-image: -moz-linear-gradient(top, black 0%, rgba(12, 14, 17, 0) 100%);
@@ -60,7 +53,7 @@
   border-bottom: 0px solid transparent;
 }
 
-/* line 45, ../sass/base/_mixins.scss */
+/* line 40, ../sass/base/_mixins.scss */
 .footer-top-border, footer {
   -webkit-border-image: -webkit-linear-gradient(left, #0c0e11 1%, #343639 50%, #0c0e11 100%) 100% 0 0 0/2px 0 0 0 stretch;
   border-bottom-width: 0px;
@@ -523,6 +516,96 @@ body {
     background-size: auto 100%;
   }
 }
+@media screen and (max-width: 768px) {
+  /* line 10, ../sass/base/_base.scss */
+  body {
+    background: url("../img/mobile-background.jpg") 100% 100% no-repeat;
+    background-size: 100% 100%;
+  }
+
+  /* line 14, ../sass/base/_base.scss */
+  div.main-content {
+    display: block;
+    background-image: none !important;
+  }
+
+  /* line 18, ../sass/base/_base.scss */
+  .mainpage-block-area div.mainpage-block {
+    position: relative;
+    margin: 20px auto;
+  }
+  /* line 22, ../sass/base/_base.scss */
+  .mainpage-block-area div.mainpage-block:hover h3 {
+    text-decoration: none;
+  }
+  /* line 26, ../sass/base/_base.scss */
+  .mainpage-block-area div.mainpage-block .image-container {
+    min-height: 150px;
+  }
+  /* line 29, ../sass/base/_base.scss */
+  .mainpage-block-area div.mainpage-block h3 {
+    text-decoration: underline;
+  }
+  /* line 32, ../sass/base/_base.scss */
+  .mainpage-block-area div.mainpage-block p {
+    color: #7d7d7e;
+  }
+  /* line 35, ../sass/base/_base.scss */
+  .mainpage-block-area div.mainpage-block .text-container a {
+    color: #adadae;
+    text-decoration: underline;
+  }
+
+  /* line 40, ../sass/base/_base.scss */
+  .navbar-toggle {
+    float: left;
+  }
+
+  /* line 43, ../sass/base/_base.scss */
+  nav.navbar.navbar-default > .container a.navbar-brand {
+    float: none;
+    display: block;
+    margin: auto auto;
+    background: none;
+  }
+
+  /* line 49, ../sass/base/_base.scss */
+  .navbar-default .navbar-toggle {
+    border: none;
+  }
+  /* line 51, ../sass/base/_base.scss */
+  .navbar-default .navbar-toggle:hover {
+    background: none;
+  }
+  /* line 54, ../sass/base/_base.scss */
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+    width: 40px;
+    height: 3px;
+  }
+
+  /* line 60, ../sass/base/_base.scss */
+  main div.mainpage-block-area:first-child {
+    padding-left: 15px;
+  }
+
+  /* line 63, ../sass/base/_base.scss */
+  main div.mainpage-block-area:last-child {
+    padding-right: 15px;
+  }
+
+  /* line 68, ../sass/base/_base.scss */
+  footer div.footer-info span:first-child, footer div.footer-info span:last-child {
+    display: none;
+  }
+}
+@media screen and (min-width: 1201px) {
+  /* line 75, ../sass/base/_base.scss */
+  nav.navbar.navbar-default .navbar-nav > li {
+    font-size: 1.1em;
+    padding: 0px 9px;
+  }
+}
 /*
 	MODULES - Individual site components
 */
@@ -582,25 +665,25 @@ body {
 main {
   min-height: 200px;
 }
-/* line 5, ../sass/modules/_sections.scss */
+/* line 4, ../sass/modules/_sections.scss */
 main .mainpage-block-area:first-child {
   padding-left: 0px;
 }
-/* line 8, ../sass/modules/_sections.scss */
+/* line 7, ../sass/modules/_sections.scss */
 main .mainpage-block-area:last-child {
   padding-right: 0px;
 }
-/* line 11, ../sass/modules/_sections.scss */
+/* line 10, ../sass/modules/_sections.scss */
 main img {
   width: 100%;
 }
 
-/* line 15, ../sass/modules/_sections.scss */
+/* line 14, ../sass/modules/_sections.scss */
 .main-content {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
-  height: 955px;
+  min-height: 955px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -616,22 +699,22 @@ nav.navbar.navbar-default {
   border: none;
   background: none;
 }
-/* line 7, ../sass/layouts/_nav.scss */
+/* line 6, ../sass/layouts/_nav.scss */
 nav.navbar.navbar-default .navbar-nav > li:not(:last-child) {
   border-right: 1px solid #515253;
 }
-/* line 10, ../sass/layouts/_nav.scss */
+/* line 9, ../sass/layouts/_nav.scss */
 nav.navbar.navbar-default .navbar-nav {
   margin-top: 27px;
 }
-/* line 15, ../sass/layouts/_nav.scss */
+/* line 14, ../sass/layouts/_nav.scss */
 nav.navbar.navbar-default .navbar-nav > li > a, nav.navbar.navbar-default .navbar-nav > li > a.dropdown-toggle {
   font-size: 1.1em;
   color: #c0c1c1;
   line-height: 30px;
   padding: 0px 9px;
 }
-/* line 22, ../sass/layouts/_nav.scss */
+/* line 21, ../sass/layouts/_nav.scss */
 nav.navbar.navbar-default > .container .navbar-brand {
   position: relative;
   top: 0px;
@@ -641,7 +724,7 @@ nav.navbar.navbar-default > .container .navbar-brand {
   margin-right: 10px;
   text-align: center;
 }
-/* line 32, ../sass/layouts/_nav.scss */
+/* line 31, ../sass/layouts/_nav.scss */
 nav.navbar.navbar-default > .container .navbar-brand img {
   display: block;
   margin: auto;

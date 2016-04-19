@@ -1,5 +1,4 @@
 main {
-	@extend .bottom-black-boxshadow;
 	@extend .gradient-border-line;
 	min-height: 200px;
 	.mainpage-block-area:first-child {
@@ -16,7 +15,7 @@ main {
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position: center;
-	height: 955px;
+	min-height: 955px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;

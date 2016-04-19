@@ -5,7 +5,7 @@
 	background: -moz-linear-gradient($top, $bottom); /* For Firefox 3.6 to 15 */
 	background: linear-gradient($top, $bottom); /* Standard syntax */
 }
-.top-black-boxshadow {
+.logo-black-gradient {
 	background: -webkit-linear-gradient( rgba(12,14,17,1) 0%, rgba(12,14,17,0.7) 70%, rgba(12,14,17,0) 100% ); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(  rgba(12,14,17,1) 0%, rgba(12,14,17,0.7) 70%, rgba(12,14,17,0) 100% ); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(  rgba(12,14,17,1) 0%, rgba(12,14,17,0.7) 70%, rgba(12,14,17,0) 100% ); /* For Firefox 3.6 to 15 */
@@ -16,16 +16,11 @@
 	-moz-box-shadow: 0px 0px 20px 0px rgba(12,14,17,1);
 	box-shadow: 0px 0px 20px 0px rgba(12,14,17,1);
 }
-.navbar-top-black-boxshadow {
-	-webkit-box-shadow: inset 0px 70px 95px -6px rgba(12,14,17,1);
-	-moz-box-shadow: inset 0px 70px 95px -6px rgba(12,14,17,1);
-	box-shadow: inset 0px 70px 90px -6px rgba(12,14,17,1);
-}
-.bottom-black-boxshadow {
-	background: -webkit-linear-gradient( rgba(12,14,17,0) 0%, rgba(12,14,17,0.7) 70%, rgba(12,14,17,1) 100% ); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(  rgba(12,14,17,0) 0%, rgba(12,14,17,0.7) 70%, rgba(12,14,17,1) 100% ); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(  rgba(12,14,17,0) 0%, rgba(12,14,17,0.7) 70%, rgba(12,14,17,1) 100% ); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(  rgba(12,14,17,0) 0%, rgba(12,14,17,0.7) 70%, rgba(12,14,17,1) 100% ); /* Standard syntax (must be last) */
+.header-gradient-background {
+	background: -webkit-linear-gradient( rgba(12,14,17,1) 4% ,rgba(12,14,17,0.9) 15%, rgba(12,14,17,0.7) 25%, rgba(12,14,17,0) 50% ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(  rgba(12,14,17,1) 4% ,rgba(12,14,17,0.9) 15%, rgba(12,14,17,0.7) 25%, rgba(12,14,17,0) 50% ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(  rgba(12,14,17,1) 4% ,rgba(12,14,17,0.9) 15%, rgba(12,14,17,0.7) 25%, rgba(12,14,17,0) 50% ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(  rgba(12,14,17,1) 4% ,rgba(12,14,17,0.9) 15%, rgba(12,14,17,0.7) 25%, rgba(12,14,17,0) 50% ); /* Standard syntax (must be last) */
 }
 .radial-top-background {
 	background: -webkit-radial-gradient(ellipse at top, #212326 20px, #0c0e11 95%);
