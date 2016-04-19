@@ -10,8 +10,9 @@ body {
 }
 @media screen and (max-width: 768px) {
 	body {
-		background: url('../img/mobile-background.jpg') 100% 100% repeat-y;
+		background: url('../img/mobile-background.jpg') repeat-y;
 		background-size: 100% auto;
+		box-shadow: none;
 	}
 	div.slider {
 		position: relative;
