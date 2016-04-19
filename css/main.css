@@ -696,23 +696,25 @@ main img {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: -1;
 }
-/* line 29, ../sass/modules/_sections.scss */
+/* line 30, ../sass/modules/_sections.scss */
 .slider .images {
   height: 100%;
 }
-/* line 31, ../sass/modules/_sections.scss */
+/* line 32, ../sass/modules/_sections.scss */
 .slider .images .slide {
   height: 100%;
+  width: 100%;
   position: absolute;
   opacity: 0;
 }
-/* line 35, ../sass/modules/_sections.scss */
+/* line 37, ../sass/modules/_sections.scss */
 .slider .images .slide img {
   height: 100%;
   width: 100%;
 }
-/* line 40, ../sass/modules/_sections.scss */
+/* line 42, ../sass/modules/_sections.scss */
 .slider .images .active-slide {
   opacity: 1;
 }
