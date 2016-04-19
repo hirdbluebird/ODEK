@@ -28,8 +28,8 @@
     background: linear-gradient(  rgba(12,14,17,1) 4% ,rgba(12,14,17,0.9) 15%, rgba(12,14,17,0.7) 25%, rgba(12,14,17,0) 50% ); /* Standard syntax (must be last) */
 }
 .radial-top-background {
-	background: -webkit-radial-gradient(ellipse at top, #212326 20px, #0c0e11 95%);
-	background: radial-gradient(ellipse at top, #212326 10px, #0c0e11 30%);
+	background: -webkit-radial-gradient(ellipse at top, rgba(255,255,255, 0.3) 20px, rgba(255,255,255, 0) 95%);
+	background: radial-gradient(ellipse at top, rgba(255,255,255, 0.3) 10px, rgba(255,255,255, 0) 30%);
 }
 .gradient-border-line {
 	-webkit-linear-gradient: (left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0) 100%);
@@ -43,6 +43,11 @@
     border-bottom: 0px solid transparent;
 }
 .footer-top-border {
-	-webkit-border-image: -webkit-linear-gradient(left, rgba(12,14,17,1) 1%,rgba(52,54,57,1) 50%,rgba(12,14,17,1) 100%) 100% 0 0 0/2px 0 0 0 stretch;
+	-webkit-border-image: -webkit-linear-gradient(left, rgba(52,54,57,0) 1%,rgba(52,54,57,1) 50%,rgba(52,54,57,0) 100%) 100% 0 0 0/2px 0 0 0 stretch;
 	border-bottom-width: 0px;
+}
+.body-footer-shadowbox {
+	-webkit-box-shadow: inset 0px -170px 81px -19px rgba(0,0,0,1);
+	-moz-box-shadow: inset 0px -170px 81px -19px rgba(0,0,0,1);
+	box-shadow: inset 0px -170px 81px -19px rgba(0,0,0,1);
 }

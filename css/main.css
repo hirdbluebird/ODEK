@@ -41,8 +41,8 @@
 
 /* line 30, ../sass/base/_mixins.scss */
 .radial-top-background, footer {
-  background: -webkit-radial-gradient(ellipse at top, #212326 20px, #0c0e11 95%);
-  background: radial-gradient(ellipse at top, #212326 10px, #0c0e11 30%);
+  background: -webkit-radial-gradient(ellipse at top, rgba(255, 255, 255, 0.3) 20px, rgba(255, 255, 255, 0) 95%);
+  background: radial-gradient(ellipse at top, rgba(255, 255, 255, 0.3) 10px, rgba(255, 255, 255, 0) 30%);
 }
 
 /* line 34, ../sass/base/_mixins.scss */
@@ -62,8 +62,15 @@
 
 /* line 45, ../sass/base/_mixins.scss */
 .footer-top-border, footer {
-  -webkit-border-image: -webkit-linear-gradient(left, #0c0e11 1%, #343639 50%, #0c0e11 100%) 100% 0 0 0/2px 0 0 0 stretch;
+  -webkit-border-image: -webkit-linear-gradient(left, rgba(52, 54, 57, 0) 1%, #343639 50%, rgba(52, 54, 57, 0) 100%) 100% 0 0 0/2px 0 0 0 stretch;
   border-bottom-width: 0px;
+}
+
+/* line 49, ../sass/base/_mixins.scss */
+.body-footer-shadowbox, body {
+  -webkit-box-shadow: inset 0px -170px 81px -19px black;
+  -moz-box-shadow: inset 0px -170px 81px -19px black;
+  box-shadow: inset 0px -170px 81px -19px black;
 }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
@@ -515,22 +522,23 @@ textarea {
 /* line 1, ../sass/base/_base.scss */
 body {
   font-family: 'Open Sans', sans-serif;
+  background: black;
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 5, ../sass/base/_base.scss */
+  /* line 7, ../sass/base/_base.scss */
   div.main-content {
     background-size: auto 100%;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 10, ../sass/base/_base.scss */
+  /* line 12, ../sass/base/_base.scss */
   body {
     background: url("../img/mobile-background.jpg") 100% 100% repeat-y;
     background-size: 100% auto;
   }
 
-  /* line 14, ../sass/base/_base.scss */
+  /* line 16, ../sass/base/_base.scss */
   div.slider {
     position: relative;
     display: block;
@@ -538,19 +546,19 @@ body {
     z-index: 1;
     margin-bottom: 30px;
   }
-  /* line 20, ../sass/base/_base.scss */
+  /* line 22, ../sass/base/_base.scss */
   div.slider .triggers-wrapper {
     position: absolute;
     bottom: -50px;
     width: 100%;
   }
-  /* line 24, ../sass/base/_base.scss */
+  /* line 26, ../sass/base/_base.scss */
   div.slider .triggers-wrapper ul.triggers {
     padding: 0px;
     width: 100%;
     text-align: center;
   }
-  /* line 28, ../sass/base/_base.scss */
+  /* line 30, ../sass/base/_base.scss */
   div.slider .triggers-wrapper ul.triggers li {
     display: inline-block;
     background: white;
@@ -559,56 +567,56 @@ body {
     margin: 0px 5px;
     cursor: pointer;
   }
-  /* line 36, ../sass/base/_base.scss */
+  /* line 38, ../sass/base/_base.scss */
   div.slider .triggers-wrapper ul.triggers li.active-trigger {
     padding: 10px;
   }
 
-  /* line 42, ../sass/base/_base.scss */
+  /* line 44, ../sass/base/_base.scss */
   div.main-content {
     display: block;
     background-image: none !important;
   }
 
-  /* line 46, ../sass/base/_base.scss */
+  /* line 48, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block {
     position: relative;
     margin: 20px auto;
   }
-  /* line 50, ../sass/base/_base.scss */
+  /* line 52, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block:hover h3 {
     text-decoration: none;
   }
-  /* line 54, ../sass/base/_base.scss */
+  /* line 56, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block .image-container {
     min-height: 150px;
   }
-  /* line 57, ../sass/base/_base.scss */
+  /* line 59, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block h3 {
     text-decoration: underline;
   }
-  /* line 60, ../sass/base/_base.scss */
+  /* line 62, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block p {
     color: #7d7d7e;
   }
-  /* line 63, ../sass/base/_base.scss */
+  /* line 65, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block .text-container a {
     color: #adadae;
     text-decoration: underline;
   }
 
-  /* line 68, ../sass/base/_base.scss */
+  /* line 70, ../sass/base/_base.scss */
   .navbar-toggle {
     float: left;
   }
 
-  /* line 71, ../sass/base/_base.scss */
+  /* line 73, ../sass/base/_base.scss */
   .languages-select {
     float: right;
     list-style: none;
   }
 
-  /* line 75, ../sass/base/_base.scss */
+  /* line 77, ../sass/base/_base.scss */
   nav.navbar.navbar-default > .container a.navbar-brand {
     float: none;
     display: block;
@@ -616,19 +624,17 @@ body {
     background: none;
   }
 
-  /* line 81, ../sass/base/_base.scss */
+  /* line 83, ../sass/base/_base.scss */
   .navbar-default .navbar-toggle {
     border: none;
   }
-  /* line 83, ../sass/base/_base.scss */
+  /* line 85, ../sass/base/_base.scss */
   .navbar-default .navbar-toggle:hover {
     background: none;
   }
-  /* line 86, ../sass/base/_base.scss */
+  /* line 88, ../sass/base/_base.scss */
   .navbar-default .navbar-toggle .icon-bar {
     background-color: white;
-    width: 40px;
-    height: 3px;
   }
 
   /* line 92, ../sass/base/_base.scss */
@@ -745,7 +751,7 @@ main img {
 .slider {
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: -60px;
   left: 0;
   right: 0;
   z-index: -1;
@@ -770,6 +776,10 @@ main img {
 /* line 43, ../sass/modules/_sections.scss */
 .slider .images .active-slide {
   opacity: 1;
+}
+/* line 47, ../sass/modules/_sections.scss */
+.slider .triggers-wrapper {
+  display: none;
 }
 
 /*

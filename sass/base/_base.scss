@@ -1,5 +1,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;
+	@extend .body-footer-shadowbox;
+	background: black;
 }
 @media screen and (max-width: 1200px) {
 	div.main-content {
@@ -85,8 +87,6 @@ body {
 		}
 		.icon-bar {
 			background-color: white;
-			width: 40px;
-			height: 3px;
 		}
 	}
 	main div.mainpage-block-area:first-child {
