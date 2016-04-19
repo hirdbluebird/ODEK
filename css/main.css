@@ -519,55 +519,83 @@ body {
 @media screen and (max-width: 768px) {
   /* line 10, ../sass/base/_base.scss */
   body {
-    background: url("../img/mobile-background.jpg") 100% 100% no-repeat;
-    background-size: 100% 100%;
+    background: url("../img/mobile-background.jpg") 100% 100% repeat-y;
+    background-size: 100% auto;
   }
 
   /* line 14, ../sass/base/_base.scss */
-  .slider {
+  div.slider {
     position: relative;
     display: block;
+    min-height: 300px;
+    z-index: 1;
+    margin-bottom: 30px;
+  }
+  /* line 20, ../sass/base/_base.scss */
+  div.slider .triggers-wrapper {
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+  }
+  /* line 24, ../sass/base/_base.scss */
+  div.slider .triggers-wrapper ul.triggers {
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  /* line 28, ../sass/base/_base.scss */
+  div.slider .triggers-wrapper ul.triggers li {
+    display: inline-block;
+    background: white;
+    padding: 6px;
+    border-radius: 50%;
+    margin: 0px 5px;
+    cursor: pointer;
+  }
+  /* line 36, ../sass/base/_base.scss */
+  div.slider .triggers-wrapper ul.triggers li.active-trigger {
+    padding: 10px;
   }
 
-  /* line 18, ../sass/base/_base.scss */
+  /* line 42, ../sass/base/_base.scss */
   div.main-content {
     display: block;
     background-image: none !important;
   }
 
-  /* line 22, ../sass/base/_base.scss */
+  /* line 46, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block {
     position: relative;
     margin: 20px auto;
   }
-  /* line 26, ../sass/base/_base.scss */
+  /* line 50, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block:hover h3 {
     text-decoration: none;
   }
-  /* line 30, ../sass/base/_base.scss */
+  /* line 54, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block .image-container {
     min-height: 150px;
   }
-  /* line 33, ../sass/base/_base.scss */
+  /* line 57, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block h3 {
     text-decoration: underline;
   }
-  /* line 36, ../sass/base/_base.scss */
+  /* line 60, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block p {
     color: #7d7d7e;
   }
-  /* line 39, ../sass/base/_base.scss */
+  /* line 63, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block .text-container a {
     color: #adadae;
     text-decoration: underline;
   }
 
-  /* line 44, ../sass/base/_base.scss */
+  /* line 68, ../sass/base/_base.scss */
   .navbar-toggle {
     float: left;
   }
 
-  /* line 47, ../sass/base/_base.scss */
+  /* line 71, ../sass/base/_base.scss */
   nav.navbar.navbar-default > .container a.navbar-brand {
     float: none;
     display: block;
@@ -575,42 +603,42 @@ body {
     background: none;
   }
 
-  /* line 53, ../sass/base/_base.scss */
+  /* line 77, ../sass/base/_base.scss */
   .navbar-default .navbar-toggle {
     border: none;
   }
-  /* line 55, ../sass/base/_base.scss */
+  /* line 79, ../sass/base/_base.scss */
   .navbar-default .navbar-toggle:hover {
     background: none;
   }
-  /* line 58, ../sass/base/_base.scss */
+  /* line 82, ../sass/base/_base.scss */
   .navbar-default .navbar-toggle .icon-bar {
     background-color: white;
     width: 40px;
     height: 3px;
   }
 
-  /* line 64, ../sass/base/_base.scss */
+  /* line 88, ../sass/base/_base.scss */
   main div.mainpage-block-area:first-child {
     padding-left: 15px;
   }
 
-  /* line 67, ../sass/base/_base.scss */
+  /* line 91, ../sass/base/_base.scss */
   main div.mainpage-block-area:last-child {
     padding-right: 15px;
   }
 
-  /* line 70, ../sass/base/_base.scss */
+  /* line 94, ../sass/base/_base.scss */
   footer {
     background: none;
   }
-  /* line 74, ../sass/base/_base.scss */
+  /* line 98, ../sass/base/_base.scss */
   footer div.footer-info span:first-child, footer div.footer-info span:last-child {
     display: none;
   }
 }
 @media screen and (min-width: 1201px) {
-  /* line 82, ../sass/base/_base.scss */
+  /* line 106, ../sass/base/_base.scss */
   nav.navbar.navbar-default .navbar-nav > li {
     font-size: 1.1em;
     padding: 0px 9px;
