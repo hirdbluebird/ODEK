@@ -689,6 +689,34 @@ main img {
   justify-content: space-between;
 }
 
+/* line 23, ../sass/modules/_sections.scss */
+.slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 29, ../sass/modules/_sections.scss */
+.slider .images {
+  height: 100%;
+}
+/* line 31, ../sass/modules/_sections.scss */
+.slider .images .slide {
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+}
+/* line 35, ../sass/modules/_sections.scss */
+.slider .images .slide img {
+  height: 100%;
+  width: 100%;
+}
+/* line 40, ../sass/modules/_sections.scss */
+.slider .images .active-slide {
+  opacity: 1;
+}
+
 /*
 	LAYOUTS - Page layout styles
 */
