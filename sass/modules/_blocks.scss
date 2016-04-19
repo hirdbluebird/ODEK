@@ -20,8 +20,9 @@
 			border-bottom-left-radius: 5px;
 			border-bottom-right-radius: 5px;
 			color: #ababac;
+			background: #24272b;
 			h3 {
-				margin: 0px 0px 5px 0px;
+				margin: 10px 0px;
 			}
 			p,
 			a {
@@ -34,6 +35,9 @@
 				color: #1084af;
 				text-align: right;
 			}
+		}
+		&:hover .text-container {
+			@extend .default-box-shadow-inset;
 		}
 		&:hover a,
 		&:hover p {

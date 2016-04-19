@@ -16,6 +16,11 @@
 	-moz-box-shadow: 0px 0px 20px 0px rgba(12,14,17,1);
 	box-shadow: 0px 0px 20px 0px rgba(12,14,17,1);
 }
+.default-box-shadow-inset {
+	webkit-box-shadow: inset 0px 0px 20px 0px rgba(12,14,17,1);
+	-moz-box-shadow: inset 0px 0px 20px 0px rgba(12,14,17,1);
+	box-shadow: inset 0px 0px 20px 0px rgba(12,14,17,1);
+}
 .header-gradient-background {
 	background: -webkit-linear-gradient( rgba(12,14,17,1) 4% ,rgba(12,14,17,0.9) 15%, rgba(12,14,17,0.7) 25%, rgba(12,14,17,0) 50% ); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(  rgba(12,14,17,1) 4% ,rgba(12,14,17,0.9) 15%, rgba(12,14,17,0.7) 25%, rgba(12,14,17,0) 50% ); /* For Opera 11.1 to 12.0 */
