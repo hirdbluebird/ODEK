@@ -53,12 +53,13 @@ $(document).ready(function() {
 	});
 
 	//moves slider to mainpage
-	var window = $(window);
 
 	function checkWidth() {
-		var windowSize = window.width();
-		if(windowSize < 768) {
+		var windowSize = $(window).width();
+		console.log(windowSize);
+		if(windowSize < 746) {
 			$('.slider').insertAfter('header');
+			$('.languages-select').insertBefore('.navbar-header');
 		}
 	}
 	checkWidth();

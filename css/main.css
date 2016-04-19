@@ -603,6 +603,12 @@ body {
   }
 
   /* line 71, ../sass/base/_base.scss */
+  .languages-select {
+    float: right;
+    list-style: none;
+  }
+
+  /* line 75, ../sass/base/_base.scss */
   nav.navbar.navbar-default > .container a.navbar-brand {
     float: none;
     display: block;
@@ -610,42 +616,42 @@ body {
     background: none;
   }
 
-  /* line 77, ../sass/base/_base.scss */
+  /* line 81, ../sass/base/_base.scss */
   .navbar-default .navbar-toggle {
     border: none;
   }
-  /* line 79, ../sass/base/_base.scss */
+  /* line 83, ../sass/base/_base.scss */
   .navbar-default .navbar-toggle:hover {
     background: none;
   }
-  /* line 82, ../sass/base/_base.scss */
+  /* line 86, ../sass/base/_base.scss */
   .navbar-default .navbar-toggle .icon-bar {
     background-color: white;
     width: 40px;
     height: 3px;
   }
 
-  /* line 88, ../sass/base/_base.scss */
+  /* line 92, ../sass/base/_base.scss */
   main div.mainpage-block-area:first-child {
     padding-left: 15px;
   }
 
-  /* line 91, ../sass/base/_base.scss */
+  /* line 95, ../sass/base/_base.scss */
   main div.mainpage-block-area:last-child {
     padding-right: 15px;
   }
 
-  /* line 94, ../sass/base/_base.scss */
+  /* line 98, ../sass/base/_base.scss */
   footer {
     background: none;
   }
-  /* line 98, ../sass/base/_base.scss */
+  /* line 102, ../sass/base/_base.scss */
   footer div.footer-info span:first-child, footer div.footer-info span:last-child {
     display: none;
   }
 }
 @media screen and (min-width: 1201px) {
-  /* line 106, ../sass/base/_base.scss */
+  /* line 110, ../sass/base/_base.scss */
   nav.navbar.navbar-default .navbar-nav > li {
     font-size: 1.1em;
     padding: 0px 9px;

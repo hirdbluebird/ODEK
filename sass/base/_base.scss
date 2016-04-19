@@ -68,6 +68,10 @@ body {
 	.navbar-toggle {
 		float: left;
 	}
+	.languages-select {
+		float: right;
+		list-style: none;
+	}
 	nav.navbar.navbar-default > .container a.navbar-brand {
 		float: none;
 		display: block;
