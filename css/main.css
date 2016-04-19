@@ -718,13 +718,14 @@ main img {
   width: 100%;
   position: absolute;
   opacity: 0;
+  transition: all 0.5s linear;
 }
-/* line 37, ../sass/modules/_sections.scss */
+/* line 38, ../sass/modules/_sections.scss */
 .slider .images .slide img {
   height: 100%;
   width: 100%;
 }
-/* line 42, ../sass/modules/_sections.scss */
+/* line 43, ../sass/modules/_sections.scss */
 .slider .images .active-slide {
   opacity: 1;
 }
