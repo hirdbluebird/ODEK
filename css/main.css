@@ -549,75 +549,59 @@ body {
   }
   /* line 23, ../sass/base/_base.scss */
   div.slider .triggers-wrapper {
-    position: absolute;
-    bottom: -50px;
-    width: 100%;
-  }
-  /* line 27, ../sass/base/_base.scss */
-  div.slider .triggers-wrapper ul.triggers {
-    padding: 0px;
-    width: 100%;
-    text-align: center;
-  }
-  /* line 31, ../sass/base/_base.scss */
-  div.slider .triggers-wrapper ul.triggers li {
-    display: inline-block;
-    background: white;
-    padding: 6px;
-    border-radius: 50%;
-    margin: 0px 5px;
-    cursor: pointer;
-  }
-  /* line 39, ../sass/base/_base.scss */
-  div.slider .triggers-wrapper ul.triggers li.active-trigger {
-    padding: 10px;
+    display: block;
   }
 
-  /* line 45, ../sass/base/_base.scss */
+  /* line 27, ../sass/base/_base.scss */
   div.main-content {
     display: block;
     background-image: none !important;
   }
 
-  /* line 49, ../sass/base/_base.scss */
+  /* line 31, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block {
     position: relative;
     margin: 20px auto;
   }
-  /* line 53, ../sass/base/_base.scss */
+  /* line 35, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block:hover h3 {
     text-decoration: none;
   }
-  /* line 57, ../sass/base/_base.scss */
+  /* line 39, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block .image-container {
     min-height: 150px;
   }
-  /* line 60, ../sass/base/_base.scss */
+  /* line 42, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block h3 {
     text-decoration: underline;
   }
-  /* line 63, ../sass/base/_base.scss */
+  /* line 45, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block p {
     color: #7d7d7e;
   }
-  /* line 66, ../sass/base/_base.scss */
+  /* line 48, ../sass/base/_base.scss */
   .mainpage-block-area div.mainpage-block .text-container a {
     color: #adadae;
     text-decoration: underline;
   }
 
-  /* line 71, ../sass/base/_base.scss */
+  /* line 53, ../sass/base/_base.scss */
+  .navbar-toggle.collapsed:focus {
+    background: none;
+  }
+
+  /* line 56, ../sass/base/_base.scss */
   .navbar-toggle {
     float: left;
   }
 
-  /* line 74, ../sass/base/_base.scss */
+  /* line 59, ../sass/base/_base.scss */
   .languages-select {
     float: right;
     list-style: none;
   }
 
-  /* line 78, ../sass/base/_base.scss */
+  /* line 63, ../sass/base/_base.scss */
   nav.navbar.navbar-default > .container a.navbar-brand {
     float: none;
     display: block;
@@ -625,40 +609,40 @@ body {
     background: none;
   }
 
-  /* line 84, ../sass/base/_base.scss */
+  /* line 69, ../sass/base/_base.scss */
   .navbar-default .navbar-toggle {
     border: none;
   }
-  /* line 86, ../sass/base/_base.scss */
+  /* line 71, ../sass/base/_base.scss */
   .navbar-default .navbar-toggle:hover {
     background: none;
   }
-  /* line 89, ../sass/base/_base.scss */
+  /* line 74, ../sass/base/_base.scss */
   .navbar-default .navbar-toggle .icon-bar {
     background-color: white;
   }
 
-  /* line 93, ../sass/base/_base.scss */
+  /* line 78, ../sass/base/_base.scss */
   main div.mainpage-block-area:first-child {
     padding-left: 15px;
   }
 
-  /* line 96, ../sass/base/_base.scss */
+  /* line 81, ../sass/base/_base.scss */
   main div.mainpage-block-area:last-child {
     padding-right: 15px;
   }
 
-  /* line 99, ../sass/base/_base.scss */
+  /* line 84, ../sass/base/_base.scss */
   footer {
     background: none;
   }
-  /* line 103, ../sass/base/_base.scss */
+  /* line 88, ../sass/base/_base.scss */
   footer div.footer-info span:first-child, footer div.footer-info span:last-child {
     display: none;
   }
 }
 @media screen and (min-width: 1201px) {
-  /* line 111, ../sass/base/_base.scss */
+  /* line 96, ../sass/base/_base.scss */
   nav.navbar.navbar-default .navbar-nav > li {
     font-size: 1.1em;
     padding: 0px 9px;
@@ -781,6 +765,29 @@ main img {
 /* line 47, ../sass/modules/_sections.scss */
 .slider .triggers-wrapper {
   display: none;
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+}
+/* line 52, ../sass/modules/_sections.scss */
+.slider .triggers-wrapper ul.triggers {
+  padding: 0px;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 57, ../sass/modules/_sections.scss */
+.slider .triggers-wrapper ul.triggers li {
+  display: inline;
+  background: white;
+  padding: 0px 10px;
+  border-radius: 50%;
+  margin: 0px 15px;
+  cursor: pointer;
+}
+/* line 65, ../sass/modules/_sections.scss */
+.slider .triggers-wrapper ul.triggers li.active-trigger {
+  padding: 5px 15px;
 }
 
 /*
@@ -822,6 +829,16 @@ nav.navbar.navbar-default > .container .navbar-brand {
 nav.navbar.navbar-default > .container .navbar-brand img {
   display: block;
   margin: auto;
+}
+/* line 36, ../sass/layouts/_nav.scss */
+nav.navbar.navbar-default .dropdown.languages-select {
+  width: 5px;
+}
+/* line 38, ../sass/layouts/_nav.scss */
+nav.navbar.navbar-default .dropdown.languages-select ul.dropdown-menu {
+  background: none;
+  border: none;
+  position: relative;
 }
 
 /* line 1, ../sass/layouts/_footer.scss */

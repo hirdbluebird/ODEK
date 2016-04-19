@@ -33,4 +33,12 @@ nav.navbar.navbar-default {
 			margin: auto;
 		}
 	}
+	.dropdown.languages-select {
+		width: 5px;
+		ul.dropdown-menu {
+			background: none;
+			border: none;
+			position: relative;
+		}
+	}
 }  

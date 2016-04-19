@@ -56,7 +56,6 @@ $(document).ready(function() {
 
 	function checkWidth() {
 		var windowSize = $(window).width();
-		console.log(windowSize);
 		if(windowSize < 746) {
 			$('.slider').insertAfter('header');
 			$('.languages-select').insertBefore('.navbar-header');
