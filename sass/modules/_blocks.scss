@@ -5,11 +5,12 @@
 		width: 95%;
 		position: absolute;
 		border-radius: 4px;
+		overflow: hidden;
 		.image-container {
 			max-height: 100px;
-			overflow: hidden;
 			border-top-left-radius: 5px;
 			border-top-right-radius: 5px; 
+			overflow-y: visible;
 			img {
 				width: 100%
 			}
@@ -20,9 +21,12 @@
 			border-bottom-left-radius: 5px;
 			border-bottom-right-radius: 5px;
 			color: #ababac;
-			background: #24272b;
+			background: rgba(0,0,0,0.93);
+			position: relative;
+			z-index: 2;
 			h3 {
 				margin: 10px 0px;
+				font-weight: 300;
 			}
 			p,
 			a {
@@ -38,6 +42,7 @@
 		}
 		&:hover .text-container {
 			@extend .default-box-shadow-inset;
+			background: #23262a;
 		}
 		&:hover a,
 		&:hover p {

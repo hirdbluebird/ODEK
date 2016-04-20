@@ -32,10 +32,11 @@ nav.navbar.navbar-default {
 				position: relative;
 				box-shadow: none;
 				min-width: 120px;
+				margin-bottom: 100px;
 				a {
-					color: #858483;
+					color: #bfbebd;
 					font-size: 1.2em;
-					padding-left: 7px;
+					padding-left: 8px;
 					&:hover {
 						background: none;
 						color: #00c0ff;

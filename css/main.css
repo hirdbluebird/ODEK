@@ -657,49 +657,57 @@ body {
   width: 95%;
   position: absolute;
   border-radius: 4px;
+  overflow: hidden;
 }
-/* line 8, ../sass/modules/_blocks.scss */
+/* line 9, ../sass/modules/_blocks.scss */
 .mainpage-block-area .mainpage-block .image-container {
   max-height: 100px;
-  overflow: hidden;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  overflow-y: visible;
 }
-/* line 13, ../sass/modules/_blocks.scss */
+/* line 14, ../sass/modules/_blocks.scss */
 .mainpage-block-area .mainpage-block .image-container img {
   width: 100%;
 }
-/* line 17, ../sass/modules/_blocks.scss */
+/* line 18, ../sass/modules/_blocks.scss */
 .mainpage-block-area .mainpage-block .text-container {
   padding: 5px 10px;
   background: #0c0e11;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   color: #ababac;
-  background: #24272b;
+  background: rgba(0, 0, 0, 0.93);
+  position: relative;
+  z-index: 2;
 }
-/* line 24, ../sass/modules/_blocks.scss */
+/* line 27, ../sass/modules/_blocks.scss */
 .mainpage-block-area .mainpage-block .text-container h3 {
   margin: 10px 0px;
+  font-weight: 300;
 }
-/* line 28, ../sass/modules/_blocks.scss */
+/* line 32, ../sass/modules/_blocks.scss */
 .mainpage-block-area .mainpage-block .text-container p,
 .mainpage-block-area .mainpage-block .text-container a {
   display: none;
   max-height: 80px;
   overflow: hidden;
 }
-/* line 33, ../sass/modules/_blocks.scss */
+/* line 37, ../sass/modules/_blocks.scss */
 .mainpage-block-area .mainpage-block .text-container a {
   margin-bottom: 5px;
   color: #1084af;
   text-align: right;
 }
 /* line 43, ../sass/modules/_blocks.scss */
+.mainpage-block-area .mainpage-block:hover .text-container {
+  background: #23262a;
+}
+/* line 48, ../sass/modules/_blocks.scss */
 .mainpage-block-area .mainpage-block:hover a, .mainpage-block-area .mainpage-block:hover p {
   display: block;
 }
-/* line 46, ../sass/modules/_blocks.scss */
+/* line 51, ../sass/modules/_blocks.scss */
 .mainpage-block-area .mainpage-block:hover h3 {
   color: white;
 }
@@ -835,23 +843,24 @@ nav.navbar.navbar-default .navbar-nav .dropdown.languages-select ul.dropdown-men
   position: relative;
   box-shadow: none;
   min-width: 120px;
+  margin-bottom: 100px;
 }
-/* line 35, ../sass/layouts/_nav.scss */
+/* line 36, ../sass/layouts/_nav.scss */
 nav.navbar.navbar-default .navbar-nav .dropdown.languages-select ul.dropdown-menu a {
-  color: #858483;
+  color: #bfbebd;
   font-size: 1.2em;
-  padding-left: 7px;
+  padding-left: 8px;
 }
-/* line 39, ../sass/layouts/_nav.scss */
+/* line 40, ../sass/layouts/_nav.scss */
 nav.navbar.navbar-default .navbar-nav .dropdown.languages-select ul.dropdown-menu a:hover {
   background: none;
   color: #00c0ff;
 }
-/* line 47, ../sass/layouts/_nav.scss */
+/* line 48, ../sass/layouts/_nav.scss */
 nav.navbar.navbar-default .navbar-header {
   position: absolute;
 }
-/* line 50, ../sass/layouts/_nav.scss */
+/* line 51, ../sass/layouts/_nav.scss */
 nav.navbar.navbar-default > .container .navbar-brand {
   position: relative;
   top: 0px;
@@ -861,7 +870,7 @@ nav.navbar.navbar-default > .container .navbar-brand {
   margin-right: 10px;
   text-align: center;
 }
-/* line 60, ../sass/layouts/_nav.scss */
+/* line 61, ../sass/layouts/_nav.scss */
 nav.navbar.navbar-default > .container .navbar-brand img {
   display: block;
   margin: auto;
