@@ -50,29 +50,34 @@ body {
 			text-decoration: underline;
 		}
 	}
-	.navbar-toggle.collapsed:focus {
-		background: none;
-	}
-	.navbar-toggle {
-		float: left;
-	}
-	.languages-select {
-		float: right;
-		list-style: none;
-	}
-	nav.navbar.navbar-default > .container a.navbar-brand {
-		float: none;
-		display: block;
-		margin: auto auto;
-		background: none;
-	}
-	.navbar-default .navbar-toggle {
-		border: none;
-		&:hover {
+	nav.navbar.navbar-default {
+		.languages-select {
+			float: right;
+			list-style: none;
+		}
+		.navbar-toggle {
+			float: left;
+			&:focus {
+				background: none;
+			}
+		}
+		& div.navbar-header {
+			position: inherit;
+		}
+		& > .container a.navbar-brand {
+			float: none;
+			display: block;
+			margin: auto auto;
 			background: none;
 		}
-		.icon-bar {
-			background-color: white;
+		& .navbar-toggle {
+			border: none;
+			&:hover {
+				background: none;
+			}
+			.icon-bar {
+				background-color: white;
+			}
 		}
 	}
 	main div.mainpage-block-area:first-child {
