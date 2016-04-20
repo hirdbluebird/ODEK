@@ -85,6 +85,25 @@ body {
 				background-color: white;
 			}
 		}
+		.navbar-collapse.collapse.in {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: #272a2e;
+			z-index: 10;
+			padding-right: 0px;
+			border-top: none;
+			.nav.navbar-nav {
+				padding: 0px 0px 100px 0px;
+				li {
+					width: 240px;
+					padding: 10px 0px 10px 20px;
+					border-bottom: 1px solid #32363a;
+					border-right: none;
+					font-size: 1.3m;
+				}
+			}
+		}
 	}
 	li.dropdown.languages-select {
 		margin-top: 17px;
@@ -100,6 +119,8 @@ body {
 		& ul.dropdown-menu {
 			position: absolute;
 			background: #272a2e;
+			right: 0;
+			float: right;
 			& a:first-child {
 				display: none;
 			}

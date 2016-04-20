@@ -52,16 +52,18 @@ $(document).ready(function() {
 		}
 	});
 
-	//moves slider to mainpage
+	//moves slider and languages select to mainpage and header navigation menu
 
 	function checkWidth() {
 		var windowSize = $(window).width();
 		if(windowSize < 746) {
 			$('.slider').detach().prependTo('main');
-			$('.languages-select').detach().prependTo('.navbar.navbar-default > .container');
+			$('.languages-select').detach().prependTo('.navbar.navbar-default > .container')
+					.children('.dropdown-menu').addClass('pull-right');		
 		} else {
 			$('.slider').detach().prependTo('body');
-			$('.languages-select').detach().appendTo('.navbar-nav');
+			$('.languages-select').detach().appendTo('.navbar-nav')
+					.children('.dropdown-menu').removeClass('pull-right');
 		}
 	}
 	checkWidth();
