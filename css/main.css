@@ -632,17 +632,13 @@ body {
     padding-right: 15px;
   }
 
-  /* line 89, ../sass/base/_base.scss */
-  footer {
-    background: none;
-  }
-  /* line 93, ../sass/base/_base.scss */
+  /* line 92, ../sass/base/_base.scss */
   footer div.footer-info span:first-child, footer div.footer-info span:last-child {
     display: none;
   }
 }
 @media screen and (min-width: 1201px) {
-  /* line 101, ../sass/base/_base.scss */
+  /* line 100, ../sass/base/_base.scss */
   nav.navbar.navbar-default .navbar-nav > li {
     font-size: 1.1em;
     padding: 0px 9px;
@@ -828,39 +824,11 @@ nav.navbar.navbar-default .navbar-nav > .open > a {
 nav.navbar.navbar-default .navbar-nav > li:not(:last-child) {
   border-right: 1px solid #515253;
 }
-/* line 24, ../sass/layouts/_nav.scss */
-nav.navbar.navbar-default .navbar-nav .dropdown.languages-select {
-  padding: 0px;
-}
-/* line 26, ../sass/layouts/_nav.scss */
-nav.navbar.navbar-default .navbar-nav .dropdown.languages-select:focus {
-  background: none;
-}
-/* line 29, ../sass/layouts/_nav.scss */
-nav.navbar.navbar-default .navbar-nav .dropdown.languages-select ul.dropdown-menu {
-  background: none;
-  border: none;
-  position: relative;
-  box-shadow: none;
-  min-width: 120px;
-  margin-bottom: 100px;
-}
-/* line 36, ../sass/layouts/_nav.scss */
-nav.navbar.navbar-default .navbar-nav .dropdown.languages-select ul.dropdown-menu a {
-  color: #bfbebd;
-  font-size: 1.2em;
-  padding-left: 8px;
-}
-/* line 40, ../sass/layouts/_nav.scss */
-nav.navbar.navbar-default .navbar-nav .dropdown.languages-select ul.dropdown-menu a:hover {
-  background: none;
-  color: #00c0ff;
-}
-/* line 48, ../sass/layouts/_nav.scss */
+/* line 25, ../sass/layouts/_nav.scss */
 nav.navbar.navbar-default .navbar-header {
   position: absolute;
 }
-/* line 51, ../sass/layouts/_nav.scss */
+/* line 28, ../sass/layouts/_nav.scss */
 nav.navbar.navbar-default > .container .navbar-brand {
   position: relative;
   top: 0px;
@@ -870,10 +838,48 @@ nav.navbar.navbar-default > .container .navbar-brand {
   margin-right: 10px;
   text-align: center;
 }
-/* line 61, ../sass/layouts/_nav.scss */
+/* line 38, ../sass/layouts/_nav.scss */
 nav.navbar.navbar-default > .container .navbar-brand img {
   display: block;
   margin: auto;
+}
+
+/* line 44, ../sass/layouts/_nav.scss */
+.dropdown.languages-select {
+  padding: 0px;
+}
+/* line 46, ../sass/layouts/_nav.scss */
+.dropdown.languages-select:focus {
+  background: none;
+}
+/* line 49, ../sass/layouts/_nav.scss */
+.dropdown.languages-select a.dropdown-toggle img {
+  display: none;
+}
+/* line 52, ../sass/layouts/_nav.scss */
+.dropdown.languages-select ul.dropdown-menu {
+  background: none;
+  border: none;
+  position: relative;
+  box-shadow: none;
+  min-width: 120px;
+  margin-bottom: 100px;
+}
+/* line 59, ../sass/layouts/_nav.scss */
+.dropdown.languages-select ul.dropdown-menu a {
+  color: #bfbebd;
+  font-size: 1.2em;
+  padding-left: 8px;
+  padding-right: 0px;
+}
+/* line 64, ../sass/layouts/_nav.scss */
+.dropdown.languages-select ul.dropdown-menu a:hover {
+  background: none;
+  color: #00c0ff;
+}
+/* line 69, ../sass/layouts/_nav.scss */
+.dropdown.languages-select ul.dropdown-menu a.mobile-link {
+  display: none;
 }
 
 /* line 1, ../sass/layouts/_footer.scss */
