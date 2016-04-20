@@ -57,9 +57,16 @@ $(document).ready(function() {
 	function checkWidth() {
 		var windowSize = $(window).width();
 		if(windowSize < 746) {
-			$('.slider').insertAfter('header');
-			$('.languages-select').insertBefore('.navbar-header');
+			$('.slider').detach().prependTo('main');
+			$('.languages-select').detach().prependTo('.navbar.navbar-default > .container');
+		} else {
+			$('.slider').detach().prependTo('body');
+			$('.languages-select').detach().appendTo('.navbar-nav');
 		}
 	}
 	checkWidth();
+
+	$(window).resize(function() {
+		checkWidth();
+	})
 });
